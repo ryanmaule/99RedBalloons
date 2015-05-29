@@ -47,7 +47,7 @@ class ViewController: UIViewController {
             
             newBalloon.name = "Balloon #\(balloon)"
             
-            redBalloons.append(newBalloon)
+            self.redBalloons.append(newBalloon)
         }
         
     }
@@ -60,11 +60,11 @@ class ViewController: UIViewController {
     @IBAction func nextBalloonButtonPressed(sender: UIBarButtonItem) {
         var randomIndex: Int
         do {
-            randomIndex = Int(arc4random_uniform(UInt32(redBalloons.count)))
+            randomIndex = Int(arc4random_uniform(UInt32(self.redBalloons.count)))
         }
-        while currentIndex == randomIndex
+        while self.currentIndex == randomIndex
         
-        var nextBalloon = redBalloons[randomIndex]
+        var nextBalloon = self.redBalloons[randomIndex]
         
         self.balloonImage.image = nextBalloon.image
         self.balloonNameLabel.text = nextBalloon.name
