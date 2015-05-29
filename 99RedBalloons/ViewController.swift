@@ -33,6 +33,18 @@ class ViewController: UIViewController {
             var randomBalloon = Int(arc4random_uniform(UInt32(balloonImages.count)))
             
             newBalloon.image = UIImage(named: balloonImages[randomBalloon])
+            
+//            switch randomBalloon {
+//            case 1:
+//                newBalloon.image = UIImage(named: "RedBalloon1.jpg")
+//            case 2:
+//                newBalloon.image = UIImage(named: "RedBalloon2.jpg")
+//            case 3:
+//                newBalloon.image = UIImage(named: "RedBalloon3.jpg")
+//            default:
+//                newBalloon.image = UIImage(named: "RedBalloon4.jpg")
+//            }
+            
             newBalloon.name = "Balloon #\(balloon)"
             
             redBalloons.append(newBalloon)
