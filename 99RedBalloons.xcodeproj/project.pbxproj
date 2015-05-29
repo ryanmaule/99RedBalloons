@@ -13,6 +13,8 @@
 		9452F0881B1801DC00CAAAC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9452F0871B1801DC00CAAAC0 /* Images.xcassets */; };
 		9452F08B1B1801DC00CAAAC0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9452F0891B1801DC00CAAAC0 /* LaunchScreen.xib */; };
 		9452F0971B1801DC00CAAAC0 /* _9RedBalloonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452F0961B1801DC00CAAAC0 /* _9RedBalloonsTests.swift */; };
+		9452F0A11B1801F900CAAAC0 /* RedBalloons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9452F0A01B1801F900CAAAC0 /* RedBalloons.swift */; };
+		9452F0A51B1805BE00CAAAC0 /* 99RedBalloonsAssets in Resources */ = {isa = PBXBuildFile; fileRef = 9452F0A41B1805BE00CAAAC0 /* 99RedBalloonsAssets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		9452F0901B1801DC00CAAAC0 /* 99RedBalloonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 99RedBalloonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9452F0951B1801DC00CAAAC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9452F0961B1801DC00CAAAC0 /* _9RedBalloonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _9RedBalloonsTests.swift; sourceTree = "<group>"; };
+		9452F0A01B1801F900CAAAC0 /* RedBalloons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RedBalloons.swift; sourceTree = "<group>"; };
+		9452F0A41B1805BE00CAAAC0 /* 99RedBalloonsAssets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = 99RedBalloonsAssets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 				9452F0871B1801DC00CAAAC0 /* Images.xcassets */,
 				9452F0891B1801DC00CAAAC0 /* LaunchScreen.xib */,
 				9452F07E1B1801DC00CAAAC0 /* Supporting Files */,
+				9452F0A01B1801F900CAAAC0 /* RedBalloons.swift */,
 			);
 			path = 99RedBalloons;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 		9452F07E1B1801DC00CAAAC0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9452F0A41B1805BE00CAAAC0 /* 99RedBalloonsAssets */,
 				9452F07F1B1801DC00CAAAC0 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -193,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9452F0861B1801DC00CAAAC0 /* Main.storyboard in Resources */,
+				9452F0A51B1805BE00CAAAC0 /* 99RedBalloonsAssets in Resources */,
 				9452F08B1B1801DC00CAAAC0 /* LaunchScreen.xib in Resources */,
 				9452F0881B1801DC00CAAAC0 /* Images.xcassets in Resources */,
 			);
@@ -214,6 +221,7 @@
 			files = (
 				9452F0831B1801DC00CAAAC0 /* ViewController.swift in Sources */,
 				9452F0811B1801DC00CAAAC0 /* AppDelegate.swift in Sources */,
+				9452F0A11B1801F900CAAAC0 /* RedBalloons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
