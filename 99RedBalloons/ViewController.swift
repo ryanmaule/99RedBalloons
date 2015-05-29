@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     
     var currentIndex = 0
     var redBalloons: [RedBalloon] = []
+    var appRandom = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,14 +59,25 @@ class ViewController: UIViewController {
     }
 
     @IBAction func nextBalloonButtonPressed(sender: UIBarButtonItem) {
-        var randomIndex: Int
-        do {
-            randomIndex = Int(arc4random_uniform(UInt32(self.redBalloons.count)))
+        var nextBalloon: RedBalloon
+        if self.appRandom {
+            var randomIndex: Int
+            do {
+                randomIndex = Int(arc4random_uniform(UInt32(self.redBalloons.count)))
+            }
+                while self.currentIndex == randomIndex
+            nextBalloon = self.redBalloons[randomIndex]
         }
-        while self.currentIndex == randomIndex
+        else {
+            nextBalloon = self.redBalloons[self.currentIndex]
         
-        var nextBalloon = self.redBalloons[randomIndex]
-        
+            if self.currentIndex < 98 {
+                self.currentIndex++
+            }
+            else {
+                self.currentIndex = 0;
+            }
+        }
         self.balloonImage.image = nextBalloon.image
         self.balloonNameLabel.text = nextBalloon.name
     }
