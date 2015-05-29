@@ -30,8 +30,11 @@ class ViewController: UIViewController {
         
         for var balloon = 1; balloon <= 99; balloon++ {
             var newBalloon = RedBalloon()
-            newBalloon.image = UIImage(named: "BerlinTVTower.jpg")
+            var randomBalloon = Int(arc4random_uniform(UInt32(balloonImages.count)))
+            
+            newBalloon.image = UIImage(named: balloonImages[randomBalloon])
             newBalloon.name = "Balloon #\(balloon)"
+            
             redBalloons.append(newBalloon)
         }
         
